@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AirtaskerClone - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+    <a href="#" class="text-blue-600 text-2xl font-bold">airtasker</a>
+    <nav class="space-x-6 hidden md:flex items-center">
+      <a href="#" class="hover:text-blue-600">Browse Tasks</a>
+      <a href="#" class="hover:text-blue-600">Become a Tasker</a>
+      <a href="#" class="hover:text-blue-600">Login</a>
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Post a task</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 text-center py-20 px-4">
+    <h1 class="text-4xl font-bold mb-4">Get help from people in your community</h1>
+    <p class="text-lg max-w-2xl mx-auto mb-6">Airtasker is a trusted community marketplace for people and businesses to outsource tasks, find local services or hire flexible staff in minutes.</p>
+    <div class="max-w-xl mx-auto flex">
+      <input type="text" id="taskInput" placeholder="e.g. Clean my house" class="flex-grow p-4 rounded-l-full border border-gray-300" />
+      <button onclick="searchTask()" class="bg-blue-600 text-white px-6 py-4 rounded-r-full">Get started</button>
+    </div>
+  </section>
+
+  <!-- Popular Categories -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8 text-center">Popular tasks</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="shadow-md p-4 rounded bg-white">
+        <img src="https://img.icons8.com/ios-filled/100/cleaning-a-surface.png" class="mx-auto mb-2" alt="Cleaning">
+        <p>Cleaning</p>
+      </div>
+      <div class="shadow-md p-4 rounded bg-white">
+        <img src="https://img.icons8.com/ios-filled/100/move-by-trolley.png" class="mx-auto mb-2" alt="Moving Help">
+        <p>Moving Help</p>
+      </div>
+      <div class="shadow-md p-4 rounded bg-white">
+        <img src="https://img.icons8.com/ios-filled/100/drill.png" class="mx-auto mb-2" alt="Furniture Assembly">
+        <p>Furniture Assembly</p>
+      </div>
+      <div class="shadow-md p-4 rounded bg-white">
+        <img src="https://img.icons8.com/ios-filled/100/wrench.png" class="mx-auto mb-2" alt="Handyman">
+        <p>Handyman</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="bg-gray-100 py-16 px-6">
+    <h2 class="text-2xl font-bold mb-10 text-center">How it works</h2>
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto text-center">
+      <div>
+        <img src="https://img.icons8.com/ios-filled/80/task.png" class="mx-auto mb-4" alt="Post a Task">
+        <h3 class="font-bold text-lg mb-2">1. Post your task</h3>
+        <p>Tell us what you need done, when, and where.</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/80/collaboration.png" class="mx-auto mb-4" alt="Review offers">
+        <h3 class="font-bold text-lg mb-2">2. Review offers</h3>
+        <p>Receive offers from trusted Taskers and choose your favorite.</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/80/checkmark--v1.png" class="mx-auto mb-4" alt="Get it done">
+        <h3 class="font-bold text-lg mb-2">3. Get it done</h3>
+        <p>Tasker arrives and gets the job done. Pay securely online.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12 px-6">
+    <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto text-sm">
+      <div>
+        <h4 class="font-bold mb-3">Company</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Careers</a></li>
+          <li><a href="#" class="hover:underline">Media</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Discover</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">How it works</a></li>
+          <li><a href="#" class="hover:underline">Earn money</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Support</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">Help</a></li>
+          <li><a href="#" class="hover:underline">Trust & Safety</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/facebook--v1.png" alt="Facebook"/></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/twitter--v1.png" alt="Twitter"/></a>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mt-8 text-sm">&copy; 2025 Airtasker Clone. For learning/demo use only.</p>
+  </footer>
+
+  <script>
+    function searchTask() {
+      const input = document.getElementById('taskInput').value.trim();
+      if (input) {
+        alert(`Searching for: ${input}`);
+      } else {
+        alert('Please enter a task.');
+      }
+    }
+  </script>
+</body>
+</html>
